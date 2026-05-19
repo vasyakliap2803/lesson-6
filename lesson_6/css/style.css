@@ -1,0 +1,369 @@
+@import url("reset.css"); 
+
+
+@import url("fonts.css"); 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"); 
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5d6b8c;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../img/figma_foto.png") center / cover no-repeat;
+  min-height: 342px;
+  
+  padding: 96px;
+  margin: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__content {
+ 
+  align-items: center;
+}
+
+.hero__title {
+  font-family: "Barlow", sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.5; 
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.hero__button {
+ 
+  align-items: center;
+  min-width: 235px;
+  min-height: 50px;
+  padding: 24px 18px;
+  background-color: #0d6efd;
+  border-radius: 12px;
+
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; 
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+/*  CHECKOUT HERO */
+
+.checkout-hero {
+  min-height: 316px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../img/Rectangle\ 1.png") center / cover no-repeat;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  margin: 50px;
+}
+
+.checkout-hero__content {
+  align-items: center;
+}
+
+.checkout-hero__logo {
+  width: 77px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.checkout-hero__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.checkout-hero__breadcrumbs {
+ 
+  gap: 6px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.checkout-hero__link {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+.checkout-hero__separator {
+  font-size: 18px;
+  color: #000000;
+}
+
+.checkout-hero__current {
+  font-weight: 400;
+  color: #000000;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.box {
+  min-height: 300px;
+  margin-bottom: 50px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.box h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 20px;
+}
+
+/* 1. Заокруглені кути + тінь */
+.box-1 {
+  background-color: #2563eb;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* 2. Різні стилі рамок */
+.box-2 {
+  background-color: #1e293b;
+  border-top: 8px solid #ef4444;
+  border-right: 8px dashed #22c55e;
+  border-bottom: 8px dotted #eab308;
+  border-left: 8px double #a855f7;
+  border-radius: 20px;
+}
+
+/* 3. Градієнтний фон */
+.box-3 {
+  background: linear-gradient(135deg, #ff6b6b, #f06595, #845ef7);
+  border-radius: 25px;
+}
+
+/* 4. Фонове зображення */
+.box-4 {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+/* 5. Parallax ефект */
+.box-5 {
+  min-height: 500px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 25px;
+}
+
+/* 6. Круглий блок */
+.box-6 {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #22c55e, #15803d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 7. Padding та Margin */
+.box-7 {
+  background-color: #f97316;
+  padding: 80px;
+  margin-bottom: 80px;
+  border-radius: 20px;
+}
+
+/* 8. Напівпрозорий фон */
+.box-8 {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.box-9 {
+  min-height: 400px;
+  padding: 40px;
+  margin-bottom: 50px;
+
+  background-image: url("../img/repeat.jpg");
+  background-repeat: repeat;
+
+  border-radius: 25px;
+  border: 3px solid #ffffff;
+}
+/* 10. Один заокруглений кут (тільки верхній правий) */
+.box-10 {
+  background-color: #3b82f6;
+  border-radius: 0 40px 0 0;
+}
+
+/* 11. Два заокруглені кути (верхній лівий і нижній правий) */
+.box-11 {
+  background-color: #10b981;
+  border-radius: 40px 0 40px 0;
+}
+
+/* 12. Три заокруглені кути (усі, крім верхнього лівого) */
+.box-12 {
+  background-color: #f59e0b;
+  border-radius: 0 40px 40px 40px;
+}
+/* 13. Різні заокруглення для кожного кута */
+.box-13 {
+  background-color: #8b5cf6;
+  border-radius: 10px 30px 60px 100px;
+}
+
+/* 14. Овальний блок */
+.box-14 {
+  background-color: #ec4899;
+  border-radius: 100px;
+}
+
+/* 15. Велике заокруглення тільки зверху */
+.box-15 {
+  background-color: #14b8a6;
+  border-radius: 60px 60px 0 0;
+}
+
+/* 16. Велике заокруглення тільки знизу */
+.box-16 {
+  background-color: #f43f5e;
+  border-radius: 0 0 60px 60px;
+}
+
+/* 17. Заокруглення тільки зліва */
+.box-17 {
+  background-color: #84cc16;
+  border-radius: 60px 0 0 60px;
+}
+
+/* 18. Заокруглення тільки справа */
+.box-18 {
+  background-color: #6366f1;
+  border-radius: 0 60px 60px 0;
+}
+
+/* Основний блок */
+.job-details {
+  width: 834px;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: #1b1b1b;
+}
+
+/* Заголовок ABOUT THIS POSITION */
+.job-details__title {
+  width: 770px;
+  height: 36px;
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5; 
+  color: #f2eae5;
+  text-transform: uppercase;
+}
+
+/* Параграфи */
+.job-details__text {
+  width: 770px;
+  margin-bottom: 32px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; 
+  color: #b3b3b2;
+}
+
+/* Секції RESPONSIBILITIES / REQUIREMENTS / BENEFITS */
+.job-details__section {
+  width: 770px;
+  margin-bottom: 32px;
+}
+
+.job-details__section:last-child {
+  margin-bottom: 0;
+}
+
+/* Підзаголовки */
+.job-details__subtitle {
+  width: 770px;
+  height: 36px;
+  margin-bottom: 16px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5; 
+  color: #f2eae5;
+  text-transform: uppercase;
+}
+
+/* Список */
+.job-details__list {
+  width: 770px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Пункти списку */
+.job-details__item {
+  width: 770px;
+  min-height: 48px;
+  padding-left: 26px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; 
+  color: #b3b3b2;
+
+  background-image: url("../img/list.svg");
+  background-repeat: no-repeat;
+  background-position: left 2px;
+}
+
+.job-details__item:last-child {
+  margin-bottom: 0;
+}
