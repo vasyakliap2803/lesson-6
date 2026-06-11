@@ -1,0 +1,255 @@
+@import url("reset.css"); 
+
+
+@import url("fonts.css"); 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"); 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    min-height:100vh;
+}
+
+h1{
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:50px;
+}
+
+.game{
+    width:1000px;
+    height:600px;
+    margin:0 auto;
+    position:relative;
+    border:5px solid #222;
+    background:white;
+}
+
+.start{
+    position:absolute;
+    top:50px;
+    left:50px;
+
+    width:120px;
+    height:120px;
+
+    background:#2c3e50;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+    font-weight:bold;
+
+    border-radius:15px;
+}
+
+.start::before{
+    content:"⚡";
+    position:absolute;
+    top:-35px;
+    font-size:30px;
+}
+
+.cable{
+    position:absolute;
+    background:#f1c40f;
+    opacity:0;
+    transition:0.2s;
+}
+
+.cable-1{
+    width:220px;
+    height:20px;
+
+    top:100px;
+    left:170px;
+}
+
+.cable-2{
+    width:20px;
+    height:180px;
+
+    top:100px;
+    left:390px;
+}
+
+.cable-3{
+    width:300px;
+    height:20px;
+
+    top:280px;
+    left:390px;
+}
+
+.cable-4{
+    width:20px;
+    height:160px;
+
+    top:280px;
+    left:690px;
+}
+
+.cable-5{
+    width:180px;
+    height:20px;
+
+    top:440px;
+    left:690px;
+}
+
+.finish{
+    position:absolute;
+    top:390px;
+    left:860px;
+
+    font-size:90px;
+
+    opacity:0.2;
+    transition:0.3s;
+}
+
+.finish::after{
+    content:" ФІНІШ";
+    font-size:25px;
+}
+
+/* ГРА */
+
+.start:hover + .cable-1{
+    opacity:1;
+}
+
+.cable-1:hover{
+    opacity:1;
+}
+
+.cable-1:hover + .cable-2{
+    opacity:1;
+}
+
+.cable-2:hover{
+    opacity:1;
+}
+
+.cable-2:hover + .cable-3{
+    opacity:1;
+}
+
+.cable-3:hover{
+    opacity:1;
+}
+
+.cable-3:hover + .cable-4{
+    opacity:1;
+}
+
+.cable-4:hover{
+    opacity:1;
+}
+
+.cable-4:hover + .cable-5{
+    opacity:1;
+}
+
+.cable-5:hover{
+    opacity:1;
+}
+
+.cable-5:hover + .finish{
+    opacity:1;
+    transform:scale(1.3);
+}
+
+
+
+
+.hero{
+    width:700px;
+    margin:100px auto;
+}
+
+.line{
+    width:230px;
+    height:6px;
+    background:linear-gradient(to right,#2dd65b,#111);
+    border-radius:10px;
+    margin-bottom:40px;
+}
+
+.title{
+    font-size:72px;
+    font-weight:300;
+    margin-bottom:30px;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.title span{
+    color:#21c45a;
+    font-weight:700;
+    display:inline-block;
+    transition:0.5s;
+}
+
+.title:hover{
+    transform:translateX(10px);
+}
+
+.title:hover span{
+    letter-spacing:3px;
+    transform:scale(1.05);
+}
+
+.text{
+    font-size:22px;
+    line-height:1.6;
+    color:#6b6b6b;
+    margin-bottom:60px;
+}
+
+.btn{
+    width:290px;
+    height:95px;
+
+    background:#21c45a;
+    color:white;
+
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+
+    font-size:32px;
+    font-weight:600;
+
+    border-radius:0 30px 0 30px;
+
+    transition:0.4s;
+}
+
+.btn span{
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:#169c43;
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.btn:hover span{
+    transform:translateX(12px);
+}
